@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6C4BD7</color>
+    <color name="primary_dark">#462C97</color>
+    <color name="accent">#D79841</color>
+
+    <!-- Color list -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#4169E1</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FF5722</color>
+
+    <!-- Color list Grey -->
+    <color name="grey">#999999</color>
+    <color name="light_grey">#F0EEEE</color>
+    <color name="dark_grey">#666666</color>
+
+    <!-- Color list Blue -->
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+
+    <!-- Color list Black -->
+    <color name="black_overlay">#66000000</color>
+
+    <!-- Color  by Name-->
+    <color name="background">#F5F2F2</color>
+    <color name="text_home_menu_header">#464549</color>
+</resources>

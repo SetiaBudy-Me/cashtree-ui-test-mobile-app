@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Cashtree Agen</string>
+
+    <!--Network Error-->
+    <string name="error_http">Oops! Something went wrong</string>
+    <string name="error_http_0">No Internet Connection</string>
+    <string name="error_http_0_message">Please check your internet connection and try again.</string>
+    <string name="error_http_403">Session has expired</string>
+    <string name="error_http_403_message">Your session has expired. Please login again.</string>
+    <string name="error_http_500">Oops! Something went wrong</string>
+    <string name="error_http_500_message">We’re unable to perform this operation at this moment, Please try again later.</string>
+    <string name="error_time_out">Connection to server is lost</string>
+    <string name="error_time_out_message">Please check your internet connection and try again.</string>
+    <string name="error_under_maintenance">Under Maintenance</string>
+    <string name="error_under_maintenance_message">Our app is currently undergoing scheduled maintenance, please check back soon. Thank you for your patience.</string>
+
+    <!--Dialog-->
+    <string name="dialog_please_wait">Please Wait..</string>
+    <string name="dialog_please_turn_on_your_devices_location">Please turn on your device’s Location.</string>
+
+    <!--Common-->
+    <string name="home">Home</string>
+    <string name="ok">OK</string>
+
+    <!--Onboarding-->
+    <string name="onboarding_benefit">Benefit 1. Lorem ipsum dolor sit amet</string>
+    <string name="onboarding_tittle">Lorem Ipsum Dolor Sit Amet</string>
+    <string name="onboarding_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</string>
+
+    <!--Home-->
+    <string name="home_toolbar_tittle">TopUp &amp; Tagihan</string>
+    <string name="home_toolbar_point">553.296</string>
+    <string name="home_agent_header">Buat Password Untuk Jadi Agen</string>
+    <string name="home_agent_desc">Dapatkan lebih banyak keuntungan!</string>
+    <string name="home_mini_game_header">Mini Game</string>
+    <string name="home_mini_game_desc">Lorem Ipsum dolor sit amet</string>
+
+    <!--Agent-->
+    <string name="agent_toolbar_tittle">Agen</string>
+    <string name="agent_create_new_password">Create New Password</string>
+    <string name="agent_create_new_password_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</string>
+    <string name="agent_password">Password</string>
+    <string name="agent_password_hint">Masukan Password</string>
+    <string name="agent_password_must_be">Must be at least 8 characters.</string>
+    <string name="agent_confirm_password">Confirm Password</string>
+    <string name="agent_confirm_password_hint">Masukan Confirm Password</string>
+    <string name="agent_confirm_password_must_be">Both passwords must match.</string>
+    <string name="agent_create_password">Buat Password</string>
+    <string name="agent_create_password_success">Password berhasil dibuat</string>
+    <string name="agent_create_password_success_desc">Selamat, Pin berhasil dirubah, gunakan untuk aktifitas di dalam cashtree</string>
+    <string name="agent_later">Nanti</string>
+
+    <!--Cat Fact-->
+    <string name="cat_fact_tittle">CAT FACT</string>
+    <string name="cat_fact_reload">Reload</string>
+
+
+</resources>

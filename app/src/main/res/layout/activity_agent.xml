@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.home.agent.AgentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/WidgetToolbar"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            style="@style/ToolbarIconBack"
+            android:id="@+id/ib_back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/ToolbarTitle"
+            android:id="@+id/tv_toolbar_title"
+            android:text="@string/agent_toolbar_tittle"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                style="@style/ToolbarPoint"
+                android:text="@string/home_toolbar_point"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="@dimen/margin_padding_size_small"
+                android:src="@drawable/ic_coin"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_padding_size_medium">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_button_later"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_padding_size_small"
+                android:layout_weight="4"
+                android:paddingTop="@dimen/padding_button_size_horizontal"
+                android:paddingBottom="@dimen/padding_button_size_horizontal"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/agent_later"
+                android:textColor="#A7A4AE"
+                android:gravity="center_horizontal"
+                android:background="@drawable/draw_bottom_round"
+                android:backgroundTint="#EAE8F2" />
+
+            <TextView
+                android:id="@+id/tv_create_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_size_small"
+                android:layout_weight="6"
+                android:paddingTop="@dimen/padding_button_size_horizontal"
+                android:paddingBottom="@dimen/padding_button_size_horizontal"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/agent_create_password"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:background="@drawable/draw_bottom_round" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom_menu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_small"
+                android:fontFamily="@font/nunito_extra_bold"
+                android:text="@string/agent_create_new_password"
+                android:textColor="@color/text_home_menu_header"
+                android:textSize="@dimen/material_text_subhead" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_small"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/agent_create_new_password_desc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/agent_password"
+                android:textColor="#464549" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_small">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_padding_size_medium"
+                    android:textSize="@dimen/material_text_menu"
+                    android:inputType="textPassword"
+                    android:hint="@string/agent_password_hint"
+                    android:maxLength="25"
+                    android:background="@drawable/draw_round_stroke_grey"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <ImageView
+                    android:id="@+id/iv_show_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_padding_size_small"
+                    android:layout_marginTop="@dimen/margin_padding_size_small"
+                    android:layout_marginEnd="@dimen/margin_padding_size_small"
+                    android:layout_marginBottom="@dimen/margin_padding_size_small"
+                    android:padding="@dimen/margin_padding_size_small"
+                    android:src="@drawable/ic_visibility"
+                    app:tint="#BDB4D8"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/iv_hide_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/margin_padding_size_small"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/margin_padding_size_small"
+                    android:src="@drawable/ic_visibility_off"
+                    android:visibility="gone"
+                    app:tint="#BDB4D8"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_error_message_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_tiny"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/agent_password_must_be"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/material_text_caption"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_large"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/agent_confirm_password"
+                android:textColor="#464549" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_small">
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/draw_round_stroke_grey"
+                    android:hint="@string/agent_confirm_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="25"
+                    android:padding="@dimen/margin_padding_size_medium"
+                    android:textSize="@dimen/material_text_menu"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <ImageView
+                    android:id="@+id/iv_show_confirm_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/margin_padding_size_small"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/margin_padding_size_small"
+                    android:src="@drawable/ic_visibility"
+                    app:tint="#BDB4D8"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/iv_hide_confirm_password"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/margin_padding_size_small"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/margin_padding_size_small"
+                    android:src="@drawable/ic_visibility_off"
+                    android:visibility="gone"
+                    app:tint="#BDB4D8"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_error_message_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_tiny"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/agent_confirm_password_must_be"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/material_text_caption"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

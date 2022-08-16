@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_benefit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+        android:gravity="center_horizontal"
+        android:text="@string/onboarding_benefit"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_padding_size_large"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_padding_size_medium"
+        app:cardElevation="@dimen/margin_padding_size_tiny">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_padding_size_large"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/tv_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_padding_size_medium"
+                android:src="@drawable/img_onboarding"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_large"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/nunito_extra_bold"
+                android:text="@string/onboarding_tittle"
+                android:textSize="@dimen/material_text_title"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_small"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/onboarding_content"
+                android:textColor="#B2A8D1" />
+
+            <TextView
+                android:id="@+id/tv_button_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_medium"
+                android:paddingStart="@dimen/padding_button_size_vertical"
+                android:paddingEnd="@dimen/padding_button_size_vertical"
+                android:paddingTop="@dimen/padding_button_size_horizontal"
+                android:paddingBottom="@dimen/padding_button_size_horizontal"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/home"
+                android:textColor="@color/white"
+                android:background="@drawable/draw_bottom_round" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
