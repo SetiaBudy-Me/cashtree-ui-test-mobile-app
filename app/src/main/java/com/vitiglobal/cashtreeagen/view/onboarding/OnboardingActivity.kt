@@ -20,6 +20,7 @@ class OnboardingActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[OnboardingViewModel::class.java]
         setContentView(binding!!.root)
 
+        // Test branch
         initView()
     }
 
